@@ -10,9 +10,9 @@
 <title>Subir Producto</title>
 </head>
 <body>
-<h1>Añada su producto</h1>
+<h1><a href="home.html">Añada su producto</a></h1>
 Language : <a href="?language=en">English</a> | <a href="?language=es">Spanish</a>
-<form:form commandName="producto">
+<form:form commandName="producto" >
 	<table>
 		<tr>
 			<td><h3>Ingrese el nombre del producto</h3> </td>

@@ -9,23 +9,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form:form modelAttribute="sesPro"> 
-<h1>
-
-<a href="home.html">MercadoSibre</a>
-</h1>
-
-
-	<h2>Aqui estan tus productos</h2>
-			<c:forEach var="producto" items="${sesPro.miStock}">
-			<tr>	
-				<td>
-				<a href=showObj.html?{opcion}=${producto.nombre}>${producto.nombre}</a>
-				</td>
-			</tr>
-			</c:forEach>
-		
+<form:form commandaName="producto">
+<h1>El producto es</h1>
+<h2>${producto.nombre}</h2>
+<h2>${producto.precio}</h2>
+<h2>${producto.stock}</h2>
 </form:form>
-
 </body>
 </html>

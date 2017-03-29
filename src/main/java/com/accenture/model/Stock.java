@@ -3,8 +3,12 @@ package com.accenture.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.annotation.Scope;
+
 public class Stock {
-	private List<Producto> miStock;
+	
+	
+	private static List<Producto> miStock;
 	
 	public Stock()
 	{
@@ -20,12 +24,12 @@ public class Stock {
 		miStock.add(tl084);
 	}
 
-	public List<Producto> getMiStock() {
+	public  List<Producto> getMiStock() {
 		return miStock;
 	}
 
-	public void setMiStock(List<Producto> miStock) {
-		this.miStock = miStock;
+	public  void setMiStock(List<Producto> miStock) {
+		Stock.miStock = miStock;
 	}
 	
 	

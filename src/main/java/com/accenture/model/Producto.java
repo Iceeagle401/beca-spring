@@ -6,6 +6,7 @@ public  class Producto {
 	private String nombre;
 	private float precio;
 	private int stock;
+	private int comprados;
  
 	public float getPrecio() {
 		return precio;
@@ -32,5 +33,11 @@ public  class Producto {
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	public int getComprados() {
+		return comprados;
+	}
+	public void setComprados(int comprados) {
+		this.comprados = comprados;
 	}
 }

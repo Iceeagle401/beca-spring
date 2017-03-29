@@ -4,26 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 import com.accenture.model.Producto;
 import com.accenture.model.Stock;
 
-@Controller
+@Controller@SessionAttributes("sesPro")
 public class ControllerUpload {
 	
-	private Stock listaVieja=new Stock();
-	private List<Producto> listaNueva =new ArrayList<>();
+	//private Stock listaVieja=new Stock();
+	private static List<Producto> listaNueva =new ArrayList<>();
 	int cantidad;
 	
 	@RequestMapping(value = "/addProduct")
-	public String updateList(@ModelAttribute("producto") Producto producto){
-			
+	public String updateList(SessionStatus status, @ModelAttribute("producto") Producto producto, Model model){
+		
+		Stock listaVieja=new Stock();
+		model.addAttribute("sesPro", listaVieja);
 		listaNueva=listaVieja.getMiStock();
 		listaNueva.add(producto);
 		listaVieja.setMiStock(listaNueva);
+		
 		cantidad=listaNueva.size();
 		for(int i=0; i<cantidad;i++)
 		System.out.println(listaNueva.get(i).getNombre());
