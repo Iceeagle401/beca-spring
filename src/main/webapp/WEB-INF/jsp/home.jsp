@@ -19,6 +19,12 @@
 			<a href="showProducts.html">Ver productos</a>
 		</td>
 	</tr>
+	<tr>
+		<td>
+			<a href="carrito.html">Carritoo</a>
+		</td>
+	</tr>
+	
 		
 	
 	

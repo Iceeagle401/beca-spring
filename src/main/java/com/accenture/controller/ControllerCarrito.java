@@ -22,6 +22,7 @@ public class ControllerCarrito {
 	@RequestMapping(value ="/carrito" )
 	public String despliega(Model model)
 {
+		lista.clear();
 	Stock muestra= new Stock();
 	for(Producto p:muestra.getMiStock())
 	{

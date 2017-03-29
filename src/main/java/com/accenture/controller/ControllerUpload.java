@@ -21,11 +21,12 @@ public class ControllerUpload {
 	//private Stock listaVieja=new Stock();
 	private static List<Producto> listaNueva =new ArrayList<>();
 	int cantidad;
+	Stock listaVieja;
 	
 	@RequestMapping(value = "/addProduct")
 	public String updateList(SessionStatus status, @ModelAttribute("producto") Producto producto, Model model){
 		
-		Stock listaVieja=new Stock();
+		listaVieja=new Stock();
 		model.addAttribute("sesPro", listaVieja);
 		listaNueva=listaVieja.getMiStock();
 		listaNueva.add(producto);

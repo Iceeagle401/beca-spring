@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.context.annotation.Scope;
 
+@Scope("session")
 public class Stock {
 	
 	

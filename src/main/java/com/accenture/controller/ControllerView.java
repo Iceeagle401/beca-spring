@@ -44,7 +44,7 @@ public class ControllerView {
 	@RequestMapping(value ="/showProducts", method = RequestMethod.POST)
 	public String mostrarProductosn(Model model)
 {
-	//Stock muestra= new Stock();
+	Stock muestra= new Stock();
 	model.addAttribute("sesPro",muestra);
 	
 	List<Producto> pro=muestra.getMiStock();
