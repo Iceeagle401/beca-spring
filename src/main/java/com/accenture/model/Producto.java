@@ -1,6 +1,9 @@
 package com.accenture.model;
 
-public abstract class Producto {
+public  class Producto {
+	
+	
+	private String nombre;
 	private float precio;
 	private float stock;
 	public float getPrecio() {
@@ -14,5 +17,19 @@ public abstract class Producto {
 	}
 	public void setStock(float stock) {
 		this.stock = stock;
+	}
+	public Producto() {
+		
+	}
+	public Producto(float precio, float stock, String nombre) {
+		this.precio = precio;
+		this.stock = stock;
+		this.nombre=nombre;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 }
