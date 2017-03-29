@@ -5,23 +5,24 @@ public  class Producto {
 	
 	private String nombre;
 	private float precio;
-	private float stock;
+	private int stock;
+ 
 	public float getPrecio() {
 		return precio;
 	}
 	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
-	public float getStock() {
+	public int getStock() {
 		return stock;
 	}
-	public void setStock(float stock) {
+	public void setStock(int stock) {
 		this.stock = stock;
 	}
 	public Producto() {
 		
 	}
-	public Producto(float precio, float stock, String nombre) {
+	public Producto(float precio, int stock, String nombre) {
 		this.precio = precio;
 		this.stock = stock;
 		this.nombre=nombre;

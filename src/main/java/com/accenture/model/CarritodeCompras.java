@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ListadeProductos {
+public class CarritodeCompras {
 	
 	//private List<Producto>miStock;
 	
@@ -27,11 +27,8 @@ public class ListadeProductos {
 
 
 
-	public ListadeProductos() {
-		List<String> miStock=new ArrayList<>();
-		miStock.add("computadora");
-		miStock.add("lavadora");
-		miStock.add("televisor");
+	public CarritodeCompras() {
+		
 		
 		
 		
