@@ -7,7 +7,7 @@
 <title>Home</title>
 </head>
 <body>
-<h1>Bienvenido al palacio del suelo</h1>
+<h1>Bienvenido al mercado casi libre</h1>
 	<table>
 	<tr>
 		<td>

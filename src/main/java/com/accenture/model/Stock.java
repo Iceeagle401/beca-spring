@@ -29,7 +29,7 @@ public class Stock {
 		return miStock;
 	}
 
-	public  void setMiStock(List<Producto> miStock) {
+	public static  void setMiStock(List<Producto> miStock) {
 		Stock.miStock = miStock;
 	}
 	

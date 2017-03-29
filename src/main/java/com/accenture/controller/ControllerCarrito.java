@@ -17,13 +17,17 @@ import com.accenture.model.Stock;
 @Controller
 public class ControllerCarrito {
 	
-	CarritodeCompras carrito=new CarritodeCompras();
-	List<String> lista=new ArrayList<>();
+	private Customer muestra= new Customer();
+	
+	
 	@RequestMapping(value ="/carrito" )
 	public String despliega(Model model)
 {
+		List<String> lista=new ArrayList<>();
+		CarritodeCompras carrito=new CarritodeCompras();
+		muestra= new Customer();
 		lista.clear();
-	Stock muestra= new Stock();
+	
 	for(Producto p:muestra.getMiStock())
 	{
 		lista.add(p.getNombre());
@@ -31,9 +35,16 @@ public class ControllerCarrito {
 		
 	model.addAttribute("lista",lista);
 	model.addAttribute("carrito", carrito);
-	
-	
-	
+//	if(carrito.getProductoElegido().isEmpty())
+//	System.out.println("no llenaste nada");
+//	else{
+//		for(String p: carrito.getProductoElegido())
+//	
+//	{
+//		System.out.println(p);
+//	}
+//		
+//	}
 	return "view";
 }
 	
