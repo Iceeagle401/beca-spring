@@ -28,7 +28,7 @@ Language : <a href="?language=en">English</a> | <a href="?language=es">Spanish</
 		</tr>
 		<tr>
 			<td colspan="2">
-				<input type="submit" value="Enter Exercise"/>
+				<input type="submit" value="Añadir Proucto"/>
 			</td>
 		</tr>
 	</table>

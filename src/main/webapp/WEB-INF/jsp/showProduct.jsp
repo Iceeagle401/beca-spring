@@ -20,7 +20,7 @@
 			<c:forEach var="producto" items="${sesPro.miStock}">
 			<tr>	
 				<td>
-				<a href=showObj.html?{opcion}=${producto.nombre}>${producto.nombre}</a>
+				<a href=showObj.html?opcion=1 >${producto.nombre}</a>
 				</td>
 			</tr>
 			</c:forEach>

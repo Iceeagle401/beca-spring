@@ -26,8 +26,8 @@ public class ControllerView {
 	
 //public List<String> list=new ArrayList<>();
 	public Stock muestra;
-	
-	@RequestMapping(value ="/showProducts", method = RequestMethod.GET)
+	public int  opcion=0;
+	@RequestMapping(value ="/showProducts", method = RequestMethod.GET )
 		public String mostrarProductos(Model model)
 	{
 		Stock muestra= new Stock();
@@ -39,11 +39,10 @@ public class ControllerView {
 			System.out.println("Aqui hay" +p.getNombre());
 		}
 		
-			
 		return "showProduct";
 	}
 	@RequestMapping(value ="/showProducts", method = RequestMethod.POST)
-	public String mostrarProductosn(Model model, @RequestParam("opcion") String opcion)
+	public String mostrarProductosn(Model model)
 {
 	//Stock muestra= new Stock();
 	model.addAttribute("sesPro",muestra);

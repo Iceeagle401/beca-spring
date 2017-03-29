@@ -9,11 +9,25 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form:form commandaName="producto">
+<form:form commandName="producto">
 <h1>El producto es</h1>
 <h2>${producto.nombre}</h2>
 <h2>${producto.precio}</h2>
 <h2>${producto.stock}</h2>
+
+
+<table>
+		<tr>
+			<td>Cuantos deseas? </td>
+			<td><form:input path="comprados"/></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="Aceptar"/>
+			</td>
+		</tr>
+	</table>
+
 </form:form>
 </body>
 </html>

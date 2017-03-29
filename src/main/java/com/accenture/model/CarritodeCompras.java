@@ -10,7 +10,7 @@ public class CarritodeCompras {
 	//private List<Producto>miStock;
 	
 	
-	String[] productoElegido;
+	List<String> productoElegido;
 	List<String> miStock;
 	
 	public List<String> getMiStock() {
@@ -37,14 +37,14 @@ public class CarritodeCompras {
 
 	
 
-	public String[] getProductoElegido() {
+	public List<String> getProductoElegido() {
 		return productoElegido;
 	}
 
 
 
 
-	public void setProductoElegido(String[] productoElegido) {
+	public void setProductoElegido(List<String> productoElegido) {
 		this.productoElegido = productoElegido;
 	}
 

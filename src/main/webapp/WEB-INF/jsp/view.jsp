@@ -11,9 +11,9 @@
 </head>
 <body>
 <h1>Seleccione su producto</h1>
-	<form:form commandName="producto">
+	<form:form commandName="carrito">
 	<tr>
-	<td><form:checkboxes items="${miStock}" path="productoElegido"></form:checkboxes></td>
+	<td><form:checkboxes items="${lista}" path="productoElegido"></form:checkboxes></td>
 	</tr>
 	<tr>
 				<td colspan="3"><input type="submit" /></td>

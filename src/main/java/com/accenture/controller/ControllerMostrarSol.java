@@ -27,7 +27,7 @@ public class ControllerMostrarSol {
 			}
 		}
 		System.out.println(mostrado.getNombre());
-		model.addAttribute("producto",mostrado);
+		model.addAttribute("producto", mostrado);
 		
 		
 		return "showpro";
